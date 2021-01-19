@@ -12,6 +12,7 @@ public class ExampleApplication extends Application {
     private static final String TAG = "JIGUANG-Example";
 
     @Override
+
     public void onCreate() {    	     
     	 Logger.d(TAG, "[ExampleApplication] onCreate");
          super.onCreate();
