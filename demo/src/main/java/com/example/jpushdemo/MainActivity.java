@@ -29,6 +29,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Button mGetRid;
 	private TextView mRegId;
 	private EditText msgText;
+
 	
 	public static boolean isForeground = false;
 	@Override
