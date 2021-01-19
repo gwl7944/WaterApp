@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <taxiang.MyImageView android:id="@+id/shop_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        />
+
+        <LinearLayout android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/shop_img"
+            android:orientation="vertical">
+            <TextView android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="dfdfdfdfdf"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#181919"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                 android:gravity="right|center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/huill"
+                    android:text="桶数："></TextView>
+                <TextView android:id="@+id/jian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="—"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:textColor="#616466"></TextView>
+                <EditText android:id="@+id/num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#616466"></EditText>
+                <TextView android:id="@+id/jia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dp"
+                    android:textColor="#616466"></TextView>
+            </LinearLayout>
+            <TextView android:id="@+id/shop_kucun"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="ssssssss"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#181919"></TextView>
+        </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/huill"
+        android:text="回桶数："></TextView>
+    <LinearLayout android:id="@+id/huill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="right|center_vertical">
+        <TextView android:id="@+id/huijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+
+            android:textColor="#616466"></TextView>
+        <EditText android:id="@+id/huinum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_alignParentBottom="true"
+            android:textColor="#616466"></EditText>
+        <TextView android:id="@+id/huijia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:textColor="#616466"></TextView>
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

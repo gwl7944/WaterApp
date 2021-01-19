@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F8FA"
+    tools:context="taxiang.DingDanFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/bg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-280dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round6"
+            android:orientation="horizontal">
+            <TextView android:id="@+id/tv_daijiedan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="待接单"
+                android:textSize="16sp"
+                android:textColor="#198CFF"
+                android:gravity="center"
+
+                android:padding="10dp"></TextView>
+
+            <TextView android:id="@+id/tv_peisongzhong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="配送中"
+                android:textSize="16sp"
+                android:textColor="#919699"
+                android:gravity="center"
+
+                android:padding="10dp"></TextView>
+
+            <TextView android:id="@+id/tv_yiwancheng"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="已完成"
+                android:textSize="16sp"
+                android:textColor="#919699"
+                android:gravity="center"
+
+                android:padding="10dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <View android:id="@+id/v_daijiedan"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+
+                android:background="#198CFF"></View>
+            <View android:id="@+id/v_peisongzhong"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:visibility="invisible"
+                android:background="#198CFF"></View>
+            <View android:id="@+id/v_yiwancheng"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:visibility="invisible"
+                android:background="#198CFF"></View>
+        </LinearLayout>
+        <ListView android:id="@+id/lv_dingdan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" ></ListView>
+    </LinearLayout>
+</LinearLayout>

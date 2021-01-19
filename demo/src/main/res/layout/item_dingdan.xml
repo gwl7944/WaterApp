@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@null"></View>
+    <LinearLayout android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round6"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#18191A"
+                android:padding="10dp"
+                android:text=""></TextView>
+            <TextView android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#18191A"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:text=""></TextView>
+        </RelativeLayout>
+        <TextView android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#616466"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:text=""></TextView>
+        <TextView android:id="@+id/tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#616466"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:text=""></TextView>
+    </LinearLayout>
+
+</LinearLayout>

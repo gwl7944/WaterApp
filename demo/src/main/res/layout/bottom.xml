@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/id_tab_weixin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_weixin_img"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dingdan"
+            android:background="#00000000"/>
+        <TextView android:id="@+id/tv_dingdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#198CFF"
+            android:text="订单"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_tab_frd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_frd_img"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bushuip"
+            android:background="#00000000"/>
+        <TextView android:id="@+id/tv_bushui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616466"
+            android:text="补水"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:background="#00000000"
+        android:visibility="invisible"
+      ></ImageButton>
+    <LinearLayout
+        android:id="@+id/id_tab_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_address_img"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tongjip"
+            android:background="#00000000"/>
+        <TextView android:id="@+id/tv_tongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616466"
+            android:text="统计"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_tab_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_setting_img"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/myp"
+            android:background="#00000000"/>
+        <TextView android:id="@+id/tv_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616466"
+            android:text="我的"/>
+    </LinearLayout>
+
+</LinearLayout>

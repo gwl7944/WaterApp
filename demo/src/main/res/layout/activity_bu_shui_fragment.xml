@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F8FA"
+    android:paddingBottom="20dp"
+    tools:context="taxiang.BuShuiFragment">
+    <LinearLayout android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dingwei"></ImageView>
+            <TextView android:id="@+id/shuizhanname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="暂无水站"></TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/bai"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@+id/shuizhanlist"
+        android:layout_below="@id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round6"
+        android:layout_above="@id/bushui"
+        android:layout_marginTop="-280dp"></ListView>
+    <TextView android:id="@+id/bushui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="补水"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round2"
+
+        android:textColor="#ffffff"></TextView>
+</RelativeLayout>
