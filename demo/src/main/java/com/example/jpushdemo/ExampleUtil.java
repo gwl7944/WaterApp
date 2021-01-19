@@ -25,6 +25,7 @@ public class ExampleUtil {
     public static final String PREFS_END_TIME = "PREFS_END_TIME";
     public static final String KEY_APP_KEY = "JPUSH_APPKEY";
 
+
     public static boolean isEmpty(String s) {
         if (null == s)
             return true;
